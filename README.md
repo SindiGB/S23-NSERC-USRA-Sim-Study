@@ -84,4 +84,4 @@ Potential next steps for this project could include:
 
 ## Author
 
-This simulation study was completed as part of a research project funded by a 2023 NSERC USRA focused on infectious disease modeling with underreporting. The project provided experience in statistical modeling, algorithm development, and debugging in R.
+This simulation study was completed as part of an NSERC-funded research project under the supervision of Dr. Justin Slater, focusing on infectious disease modeling with underreporting. The project provided experience in statistical modeling, algorithm development, and debugging in R.
