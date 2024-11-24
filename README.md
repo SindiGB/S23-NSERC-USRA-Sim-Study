@@ -44,7 +44,7 @@ You can install the required packages by running the following in R:
 
 ## Running the Code
 
-1. **Load the Code**: Open the R Markdown *S23 NSERC USRA Simulation Studies for Underreported Infectious Disease Time Series Models (Final).Rmd* in RStudio.
+1. **Load the Code**: Open the R Markdown file *S23 NSERC USRA Simulation Studies for Underreported Infectious Disease Time Series Models (Final).Rmd* in RStudio.
 
 2. **Run the Simulation**: The code will simulate infectious disease time series data, introduce underreporting, estimate model parameters, and generate plots.
 
