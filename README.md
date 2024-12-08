@@ -64,13 +64,34 @@ You can install the required packages by running the following in R:
 
 ## Key Results and Interpretation
 
-- **Estimates of *π* (Reporting Probability)**: Plots show how well the method captures the true reporting rate.
+**Inaccuracy of Moment Estimators for Short Time Series**:
 
-- **Estimates of *φ* (Autoregressive Parameter)**: Visualizations of *φ* reveal how accurately the model captures the daily dependency of cases, even with underreporting.
+- Estimators of 𝜋, 𝜙, and 𝜈 often perform poorly for short time series, sometimes yielding physically impossible values, such as negative reproduction numbers.
 
-- **Estimates of *ν* (Mean Infection Rate)**: The reliability of the baseline infection rate estimate under different reporting probabilities and time series lengths is also examined.
+- This underscores the limitations of the Method of Moments for small datasets.
 
-These results can help public health officials and researchers understand the potential biases and reliability of disease model estimates when dealing with underreported data.
+
+**Effects of Underreporting**:
+
+- Underreporting systematically leads to overestimation of 𝜈, which is counterintuitive.
+
+- The epidemic component's relative importance is underestimated when underreporting is present.
+
+
+**Behavior of Moment Estimators Across Scenarios**:
+
+- 𝜋: The estimator shows upward bias in the presence of underreporting and performs better for higher true reporting rates.
+
+- 𝜙: Accurately captures the reporting rate (𝜋) and follows a predictable relationship.
+
+- 𝜈: Estimates deviate more significantly as underreporting worsens, reflecting a misattribution of variation in observed counts.
+
+
+**Visual Insights from the Plots**:
+
+- Estimates of 𝜙 vs. Estimates of 𝜋: Clear monotonic relationship, reflecting accurate capture of the reporting rate.
+
+- Estimates of 𝜈 vs. Estimates of 𝜋: Non-monotonic pattern with systematic overestimation of 𝜈, peaking at intermediate reporting rates.
 
 
 ## Future Improvements
