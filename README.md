@@ -7,11 +7,11 @@ This repository contains R code developed for a simulation study on infectious d
 
 In infectious disease modeling, underreporting is a common issue where only a fraction of cases are reported. This project simulates time series data for disease cases, "thins" the data to mimic underreporting, and then applies statistical methods to estimate key model parameters:
 
-- ***φ* (phi)**: The autoregressive parameter representing the dependency of each day's cases on the previous day.
+- **𝜙 (phi)**: The autoregressive parameter representing the dependency of each day's cases on the previous day.
 
-- ***ν* (nu)**: The baseline infection rate.
+- **𝜈 (nu)**: The baseline infection rate.
 
-- ***π* (pi)**: The reporting probability or the fraction of true cases that are observed.
+- **𝜋 (pi)**: The reporting probability or the fraction of true cases that are observed.
 
 By comparing estimated parameters with the true values used in the simulations, this study provides insights into the reliability of these estimates under various scenarios.
 
@@ -20,7 +20,7 @@ By comparing estimated parameters with the true values used in the simulations, 
 
 - **Simulation Code**: *S23 NSERC USRA Simulation Studies for Underreported Infectious Disease Time Series Models (Final).Rmd* — The main R code for generating simulated data, introducing underreporting, estimating parameters, and visualizing results.
 
-- **Results Plots**: The code produces plots showing estimates of *φ*, *ν*, and *π* across multiple simulations, helping visualize the accuracy and potential biases in parameter estimates.
+- **Results Plots**: The code produces plots showing estimates of 𝜙, 𝜈, and 𝜋 across multiple simulations, helping visualize the accuracy and potential biases in parameter estimates.
 
 
 ## Prerequisites
@@ -53,11 +53,11 @@ You can install the required packages by running the following in R:
 
 ## Code Structure
 
-- **Data Simulation**: The code simulates a time series of true case counts based on a disease transmission model. Each day’s cases depend on the previous day’s cases (captured by *φ*) and a baseline infection rate (*ν*).
+- **Data Simulation**: The code simulates a time series of true case counts based on a disease transmission model. Each day’s cases depend on the previous day’s cases (captured by 𝜙) and a baseline infection rate (𝜈).
 
-- **Underreporting**: The true cases are "thinned" by a binomial process to introduce underreporting, controlled by the reporting probability, *π*.
+- **Underreporting**: The true cases are "thinned" by a binomial process to introduce underreporting, controlled by the reporting probability, 𝜋.
 
-- **Parameter Estimation**: Using Method of Moments (MoM) estimators, the code estimates values of *φ*, *ν*, and *π* based on the underreported data.
+- **Parameter Estimation**: Using Method of Moments (MoM) estimators, the code estimates values of 𝜙, 𝜈, and 𝜋 based on the underreported data.
 
 - **Visualization**: Plots are generated to show the distribution of estimates for each parameter, comparing them to their true values across various simulation settings.
 
@@ -89,9 +89,9 @@ You can install the required packages by running the following in R:
 
 **Visual Insights from the Plots**:
 
-- Estimates of 𝜙 vs. Estimates of 𝜋: Clear monotonic relationship, reflecting accurate capture of the reporting rate.
+- **Estimates of 𝜙 vs. Estimates of 𝜋**: Clear monotonic relationship, reflecting accurate capture of the reporting rate.
 
-- Estimates of 𝜈 vs. Estimates of 𝜋: Non-monotonic pattern with systematic overestimation of 𝜈, peaking at intermediate reporting rates.
+- **Estimates of 𝜈 vs. Estimates of 𝜋**: Non-monotonic pattern with systematic overestimation of 𝜈, peaking at intermediate reporting rates.
 
 
 ## Future Improvements
